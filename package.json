@@ -11,7 +11,9 @@
     "db:push": "drizzle-kit push",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:erd": "drizzle-erd --in ./app/db/schema/index.ts --out erd.svg"
+    "db:erd": "drizzle-erd --in ./app/db/schema/index.ts --out erd.svg",
+    "docker:build": "docker build -t my-app .",
+    "docker:run": "docker run -p 3000:3000 my-app"
   },
   "dependencies": {
     "@libsql/client": "^0.15.9",
@@ -23,7 +25,8 @@
     "isbot": "^5.1.27",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router": "^7.5.3"
+    "react-router": "^7.5.3",
+    "drizzle-kit": "^0.31.1"
   },
   "devDependencies": {
     "@react-router/dev": "^7.5.3",
@@ -32,7 +35,6 @@
     "@types/node": "^20",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "drizzle-kit": "^0.31.1",
     "tailwindcss": "^4.1.4",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
