@@ -1,0 +1,42 @@
+{
+  "name": "react-router-poc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc",
+    "studio": "drizzle-kit studio",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:erd": "drizzle-erd --in ./app/db/schema/index.ts --out erd.svg"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.9",
+    "@react-router/node": "^7.5.3",
+    "@react-router/serve": "^7.5.3",
+    "bcrypt": "^6.0.0",
+    "drizzle-erd": "^0.0.1-alpha.11",
+    "drizzle-orm": "^0.44.2",
+    "isbot": "^5.1.27",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.5.3"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.5.3",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "drizzle-kit": "^0.31.1",
+    "tailwindcss": "^4.1.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
